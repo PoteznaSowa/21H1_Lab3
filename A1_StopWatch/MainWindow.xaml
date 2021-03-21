@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A1_StopWatch"
         mc:Ignorable="d"
-        Title="StopWatch" Height="230" Width="420" ResizeMode="NoResize">
+        Title="StopWatch" Height="230" Width="420" ResizeMode="CanMinimize">
     <Grid>
         <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="190" FontSize="48" Click="StartButton_Click"/>
         <Button x:Name="ClearButton" Content="Clear" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="190" FontSize="48" Click="ClearButton_Click"/>
