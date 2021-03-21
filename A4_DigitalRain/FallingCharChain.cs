@@ -23,7 +23,7 @@ namespace A4_DigitalRain {
 			};
 			char sym;
 			do {
-				sym = (char)random.Next(33, 2048);
+				sym = (char)random.Next(33, 1424);
 				// Перевірити, щоб не було керуючих символів,
 				// інакше на екрані з'являтимуться поодинокі символи.
 			} while(char.IsControl(sym));

@@ -64,6 +64,7 @@ namespace A4_DigitalRain {
 						Console.SetCursorPosition(x, y + topedge - j);
 						Console.ForegroundColor = color;
 						Console.Write(symbol);
+						Console.SetCursorPosition(0, bottomedge);
 
 						if(symbol == ' ')
 							break;
@@ -82,7 +83,6 @@ namespace A4_DigitalRain {
 			} while(!_exit && (!Console.KeyAvailable || Console.ReadKey(true).Key != ConsoleKey.Escape));
 
 			Console.ResetColor();
-			Console.SetCursorPosition(0, bottomedge);
 			Console.CursorVisible = true;
 		}
 	}
