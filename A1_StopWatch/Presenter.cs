@@ -24,25 +24,21 @@ namespace A1_StopWatch {
 			Update = updateevent;
 			UpdateStopwatch(this, null);
 
-			// Виставити інтервал таймера у 10 мс.
 			timer.Interval = new TimeSpan(100000);
 
 			timer.Tick += UpdateStopwatch;
 		}
 
-		// Запустити або зупинити секундомір.
 		public void StartStopwatch() {
 			timer.IsEnabled = model.Start();
 			UpdateStopwatch(this, null);
 		}
 
-		// Обнулити секундомір.
 		public void ResetStopwatch() {
 			model.Reset();
 			UpdateStopwatch(this, null);
 		}
 
-		// Отримати поточні показники секундоміра та повідомити компонент View.
 		void UpdateStopwatch(object sender, EventArgs e) => Update?.Invoke(this, model.Read());
 	}
 }
