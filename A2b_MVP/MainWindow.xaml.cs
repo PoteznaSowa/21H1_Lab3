@@ -14,8 +14,6 @@ namespace MVP {
 		readonly Presenter p;
 		event EventHandler MyEvent1;
 
-		// Змініть існуючий проект MVP (https://dropmefiles.com/BS0Rc),
-		// розширивши його додаванням методів доступу add і remove до події.
 		public event EventHandler MyEvent {
 			add {
 				MyEvent1 += value;
